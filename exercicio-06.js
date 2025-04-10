@@ -2,4 +2,4 @@
 //pessoa é mais velha que a outra.
 let idade1 = 30;
 let idade2 = 40;
-console.log(idade1 >= idade2 ? "primeira pessoa mais velha": "segunda pessoa mais velha");
+console.log(idade1 > idade2 ? "primeira pessoa mais velha": "segunda pessoa mais velha");
