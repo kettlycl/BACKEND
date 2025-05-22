@@ -41,7 +41,31 @@ let apt = new imovel(2,'Apartamento', 'Rua Amélia nº 1010, bairro centro');
 console.log(apt.exibirinformacoes());
 
 //04
-import EntradaDados from 'readline-sync';
+//04
+class Veiculo {
+    constructor(marca, modelo, ano) {
+    this.marca = marca;
+    this.modelo = modelo;
+    this.ano = ano;
+    }
+    
+    exibirDetalhes() {
+    return `Marca: ${this.marca}, Modelo: ${this.modelo}, Ano: ${this.ano}`;
+    }
+    }
+    const carro = new Veiculo("Toyota", "Corolla", 2022);
+    const motocicleta = new Veiculo("Honda", "CBR 600RR", 2021);
+    console.log("Carro:");
+    console.log(carro.exibirDetalhes());
+    
+    console.log("\nMotocicleta:");
+    console.log(motocicleta.exibirDetalhes());
+    import entraadados from 'readline-sync';
+    
+    console.log()
+    let nome =entraadados.question('Informe seu nome: ');
+    console.log(`ola ${nome}, seja bem vindo`);
+
 
 console.log();
 let nome = EntradaDados.question("informe seu nome:");
